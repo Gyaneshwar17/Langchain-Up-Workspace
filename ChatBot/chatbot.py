@@ -14,7 +14,7 @@ while True:
     if user=='exit':
         break
     result=chat.invoke(history)
-    history.append(result.content[0]['text'])
+    history.append(result.content[0]['text']) 
     print("Gemini: ",result.content[0]['text'])
 
 
