@@ -15,4 +15,4 @@ with open('Chat_history.txt') as f:
 
 print(chat_history)
 
-chat_template.invoke({'chat_history':chat_history, 'query':'Who is my Fav F1 driver.'})
+chat_template.invoke({'chat_history':chat_history, 'query':'Who is my Fav F1 driver.'}) 
