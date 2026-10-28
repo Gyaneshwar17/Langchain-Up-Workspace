@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-chat=ChatGoogleGenerativeAI(model='gemini-3.1-flash-lite')
+chat=ChatGoogleGenerativeAI(model='gemini-3.5-flash-lite',max_tokens=500)
 
 history=[
     SystemMessage(content="You are a expert in F1.")
