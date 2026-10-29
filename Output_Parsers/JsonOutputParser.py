@@ -9,7 +9,7 @@ pipe = pipeline(
     device=-1,
     max_new_tokens=100,
     do_sample=True,
-    temperature=0.7,
+    temperature=1.5,
     return_full_text=False,
 )
 
