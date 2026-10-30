@@ -26,3 +26,5 @@ numpy
 scikit-learn
 
 langchain-classic
+
+grandalf
