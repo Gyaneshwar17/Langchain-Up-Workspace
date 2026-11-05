@@ -22,13 +22,13 @@ model=ChatGoogleGenerativeAI(model='gemini-3.1-flash-lite',max_tokens=500)
 
 parser= StrOutputParser()
 
-report_chain = RunnableSequence(prompt1,model,parser)
+report_chain = prompt1 | model | parser
 
 branch_chian = RunnableBranch(
-    (lambda x: len(x.split())>300, RunnableSequence(prompt2,model,parser)),
+    (lambda x: len(x.split())>300, prompt2 | model | parser),
     RunnablePassthrough()
 )
 
-chain = RunnableSequence(report_chain, branch_chian)
+chain = report_chain | branch_chian
 
 print(chain.invoke({'topic':'F1'}))
