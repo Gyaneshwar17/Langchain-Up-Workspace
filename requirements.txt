@@ -28,3 +28,5 @@ scikit-learn
 langchain-classic
 
 grandalf
+
+langchain-community
