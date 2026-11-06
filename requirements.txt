@@ -30,3 +30,5 @@ langchain-classic
 grandalf
 
 langchain-community
+
+pypdf
