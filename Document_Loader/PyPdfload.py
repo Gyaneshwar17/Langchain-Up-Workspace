@@ -9,3 +9,5 @@ print(type(docs))
 print(docs[2].metadata)
 
 print(docs[2].page_content)
+
+print(len(docs))
