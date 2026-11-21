@@ -33,5 +33,6 @@ langchain-community
 
 pypdf
 
-
 bs4
+
+joblib
