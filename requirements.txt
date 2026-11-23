@@ -36,3 +36,5 @@ pypdf
 bs4
 
 joblib
+
+langchain_experimental
